@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <title>Unflix</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="inicio.html">
+            <h1>Unflix</h1>
+        </a>
+
+        <div class="divPerfil">
+            <a href="perfil.html" class="linkPerfil">Perfil</a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="divFiltro divEnNav">
+            <select id="categorias" name="categorias" class="categorias">
+                <option value="" selected disabled>Categorías</option>
+                <option value="accion">Acción</option>
+                <option value="terror">Terror</option>
+                <option value="aventura">Aventura</option>
+                <option value="drama">Drama</option>
+                <option value="comedia">Comedia</option>
+                <option value="todas">Mostrar todo</option>
+            </select>
+        </div>
+        <div class="divPeliculasSeries divEnNav">
+            <ul>
+                <li><a href="inicio.html" class="navPeliculasEnSeries">Peliculas</a></li>
+                <li><a href="inicioSeries.html" class="navSeriesEnSeries">Series</a></li>
+            </ul>
+        </div>
+        <div class="divFiltroDeBusqueda divEnNav">
+            <input type="search" placeholder="Buscar" id="filtroDeBusqueda" class="filtroDeBusqueda">
+        </div>
+    </nav>
+
+    <main>
+        <div class="divSeries" id="divSeries">
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>2024 Unflix. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="../scripts/inicioSeries.js"></script>
+</body>
+
+</html>

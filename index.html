@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/iniciarSesion.css">
+    <title>Unflix</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Unflix</h1>
+        </a>
+    </header>
+
+
+    <main>
+
+        <h2>Iniciar sesión</h2>
+
+        <div class="contenedorForm">
+            <form action="" id="formulario">
+                <div class="divNombreUsuario">
+                    <label class="label" for="nombreDeUsuario">Nombre de usuario</label>
+                    <input type="text" id="nombreDeUsuario" name="nombreDeUsuario" class="input inputNombreUsuario">
+                    <span></span> <!-- campo para imprimir el mensaje de error de JavaScript -->
+                </div>
+
+                <div class="divContraseña">
+                    <label class="label" for="password">Contraseña</label>
+                    <input type="password" id="password" class="input inputPassword" name="password">
+                    <span></span> <!-- campo para imprimir el mensaje de error de JavaScript -->
+                </div>
+
+                <div class="divBotonEnviar">
+                    <input type="submit" id="botonEnviar" class="inputEnviar" value="Inciar sesión">
+                </div>
+            </form>
+        </div>
+
+        <div class="contenedorRecuperar">
+            <a href="pages/recoverMail.html">Recuperar con correo electrónico</a>
+            <a href="pages/recoverTel.html">Recuperar con teléfono</a>
+            <br>
+            <a href="pages/register.html" class="linkRegistrarse">Registrarse</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>2024 Unflix. Todos los derechos reservados.</p>
+    </footer>
+
+
+
+    <script src="scripts/iniciarSesion.js"></script>
+</body>
+
+</html>

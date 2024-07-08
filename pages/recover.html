@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="../styles/recover.css">
+</head>
+<body>
+    <section class="frame_login">
+        <h2>Recuperar contraseña</h2>
+        <form action="page/home.html" id="form_inicio_sesion" class="form" method="post">
+            <div class="field">
+                <label class="br" for="usuario">E-mail</label>
+                <input class="br" type="email" name="usuario" id="usuario" placeholder="Ingrese email">
+            </div>
+            <div class="field">
+                <label class="br" for="clave">Nombre de Usuario</label>
+                <!-- <input type="password" name="contrasenia" id="contrasenia" placeholder="Contraseña" required minlength="8"> -->
+                <input class="br" type="text" name="clave" id="clave" placeholder="Ingresa nombre de usuario">
+                <!-- <p id="log ocultar"></p> -->
+            </div>
+            <p class="fila">
+                <a class="btn btn_send" href="/">Enviar email</a>
+                <a class="btn btn_cancel" href="/">Cancelar</a>
+            </p>
+        </form>
+    </section>
+</body>
+</html>

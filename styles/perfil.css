@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url("../partials/base.css");
+@import url("../partials/hero.css");
+
+h1 {
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+
+.contenedorPerfil {
+    background-color: rgb(60, 60, 60);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fila1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-right: solid 1px white;
+}
+
+.contenedorDatosYCerrarSesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fotoPerfil {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+
+
+
+h2 {
+    color: white;
+    font-size: 40px;
+}
+
+p {
+    color: white;
+    margin-top: 3px;
+}
+
+.botonCerrarSesion {
+    background-color: red;
+    height: 30px;
+    width: 100px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:1000px) {
+    .contenedorPerfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .contenedorImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .fotoPerfil {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .contenedorDatosYCerrarSesion {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fila1 {
+        grid-template-columns: 100%;
+        border: none;
+        margin-bottom: 30px;
+    }
+}
+
+.fila2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.botonModificaciones {
+    background-color: red;
+    height: 30px;
+    width: 300px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 7px;
+}

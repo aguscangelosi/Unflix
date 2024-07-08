@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificación de Contraseña</title>
+    <link rel="stylesheet" href="../styles/editarContraseña.css">
+</head>
+
+<body>
+    <header>
+        <a href="inicio.html">
+            <h1>Unflix</h1>
+        </a>
+        <div class="divPerfil">
+            <a href="perfil.html" class="linkPerfil">Volver</a>
+        </div>
+    </header>
+    <main>
+        <h2>Modificar Contraseña</h2>
+        <form id="formularioContraseña" action="perfil.html">
+            <div class="divInput">
+                <label for="nuevaContrasena">Ingrese la contraseña nueva</label>
+                <input type="password" id="nuevaContraseña" required>
+                <span class="error-message"></span>
+            </div>
+            <div class="divInput">
+                <label for="repetirContrasena">Repita la contraseña</label>
+                <input type="password" id="repetirContrasena" required>
+                <span class="error-message"></span>
+            </div>
+            <input type="submit" id="botonEnviar" value="Confirmar" disabled>
+        </form>
+    </main>
+    <script src="../scripts/editarContraseña.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="../styles/registro.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="../index.html">
+            <h1>Unflix</h1>
+        </a>
+    </header>
+
+    <main class="main">
+
+        <div class="container">
+            <div class="divH2">
+                <h2>Registrarse</h2>
+            </div>
+            <div class="containerFormulario">
+                <form action="">
+                    <div class="containerColumnaUno">
+                        <div class="containerInputs">
+                            <label class="label" for="nombre">Nombre</label>
+                            <input type="text" name="nombre" id="nombre">
+                            <span></span>
+                        </div>
+
+                        <div class="containerInputs">
+                            <label class="label" for="apellido">Apellido</label>
+                            <input type="text" name="apellido" id="apellido">
+                            <span></span>
+                        </div>
+
+                        <div class="containerInputs">
+                            <label class="label" for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email">
+                            <span></span>
+                        </div>
+
+                        <div class="containerInputs">
+                            <label class="label" for="telefono">Teléfono</label>
+                            <input type="tel" name="telefono" id="telefono">
+                            <span></span>
+                        </div>
+
+                        <div class="containerInputs">
+                            <label class="label" for="contraseña">Contraseña</label>
+                            <input class="label" type="password" name="contraseña" id="contraseña">
+                            <span></span>
+                        </div>
+
+                        <div class="containerInputs">
+                            <label for="repContraseña">Repetir contraseña</label>
+                            <input class="label" type="password" name="repContraseña" id="repContraseña">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="containerColumnaDos">
+
+                        <!-- Métodos de pago -->
+                        <div class="containerInputs">
+                            <label>Método de pago:</label>
+                            <div class="divMetodoDePago">
+                                <input type="radio" id="tarjetaCredito" name="metodoPago" value="tarjetaCredito">
+                                <label for="tarjetaCredito">Tarjeta de crédito</label>
+                            </div>
+                            <div class="divMetodoDePago">
+                                <input type="radio" id="cuponPago" name="metodoPago" value="cuponPago">
+                                <label for="cuponPago">Cupón de pago</label>
+                            </div>
+                            <div class="divMetodoDePago">
+                                <input type="radio" id="transferenciaBancaria" name="metodoPago"
+                                    value="transferenciaBancaria">
+                                <label for="transferenciaBancaria">Transferencia bancaria</label>
+                            </div>
+                        </div>
+
+                        <!-- Información de Tarjeta de crédito -->
+                        <div id="infoTarjetaCredito" class="metodoPagoInfo" style="display:none;">
+                            <div class="containerInputs">
+                                <label class="label" for="numeroTarjeta">Número de tarjeta</label>
+                                <input type="text" name="numeroTarjeta" id="numeroTarjeta">
+                                <span></span>
+                            </div>
+                            <div class="containerInputs">
+                                <label class="label" for="cvv">CVV</label>
+                                <input type="text" name="cvv" id="cvv">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <!-- Información de Cupón de pago -->
+                        <div id="infoCuponPago" class="metodoPagoInfo" style="display:none;">
+                            <div>
+                                <input type="checkbox" id="rapipago" name="cupon" value="rapipago">
+                                <label for="rapipago">Rapipago</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="pagofacil" name="cupon" value="pagofacil">
+                                <label for="pagofacil">Pago fácil</label>
+                            </div>
+                        </div>
+
+                        <!-- Información de Transferencia bancaria -->
+                        <div id="infoTransferenciaBancaria" class="metodoPagoInfo" style="display:none;">
+                            <div class="containerInputs">
+                                <label class="label" for="cbu">CBU</label>
+                                <input type="text" name="cbu" id="cbu">
+                                <span></span>
+                            </div>
+                        </div>
+
+                        <div class="divBotones">
+                            <a href="inicio.html"><input class="botonEnviar" id="botonRegistrarse" type="submit"
+                                    value="Registrarse"></input></a>
+                            <button class="botonEnviar"><a href="../index.html">Iniciar sesión</a></button>
+                        </div>
+                        <span></span>
+                    </div>
+                </form>
+            </div>
+    </main>
+
+    <footer>
+        <p>2024 Unflix. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../scripts/register.js"></script>
+</body>
+
+</html>

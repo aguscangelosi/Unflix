@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Método de Pago</title>
+    <link rel="stylesheet" href="../styles/modificarPago.css">
+</head>
+
+<body>
+    <header>
+        <a href="inicio.html">
+            <h1>Unflix</h1>
+        </a>
+        <div class="divPerfil">
+            <a href="perfil.html" class="linkPerfil">Volver</a>
+        </div>
+    </header>
+    <main>
+        <h2>Modificar Método de Pago</h2>
+        <form id="metodoPagoForm">
+            <div class="divDeMetodo">
+                <input type="radio" id="tarjetaCredito" name="metodoPago" value="tarjetaCredito">
+                <label for="tarjetaCredito">Tarjeta de crédito</label>
+                <div id="tarjetaCreditoCampos" style="display: none;">
+                    <label for="numeroTarjeta">Número de Tarjeta:</label>
+                    <input type="text" id="numeroTarjeta">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv">
+                </div>
+            </div>
+
+            <div class="divDeMetodo">
+                <input type="radio" id="cuponPago" name="metodoPago" value="cuponPago">
+                <label for="cuponPago">Cupón de pago</label>
+                <div id="cuponPagoCampos" style="display: none;">
+                    <label>
+                        <input type="checkbox" id="pagoFacil"> PagoFacil
+                    </label>
+                    <label>
+                        <input type="checkbox" id="rapiPago"> RapiPago
+                    </label>
+                </div>
+            </div>
+
+            <div class="divDeMetodo">
+                <input type="radio" id="transferenciaBancaria" name="metodoPago" value="transferenciaBancaria">
+                <label for="transferenciaBancaria">Transferencia bancaria</label>
+                <div id="transferenciaBancariaCampos" style="display: none;">
+                    <label for="cvu">CVU:</label>
+                    <input type="text" id="cvu">
+                </div>
+            </div>
+
+            <button type="submit" class="botonEnviar" id="botonEnviar">Enviar</button>
+        </form>
+    </main>
+    <script src="../scripts/modificarPago.js"></script>
+</body>
+
+</html>
